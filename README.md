@@ -1,6 +1,22 @@
 # Webdesign-Projektarbeit-React
 
+## Requirements
+- Visual Studio Code (https://code.visualstudio.com/Download)
+- Docker (https://docs.docker.com/desktop/install/windows-install/)
+- Node.js (https://nodejs.org/en/download/package-manager | am besten die LTS-Variante)
+- Git (https://git-scm.com/downloads)
+
+### Extensions in Visual Studio Code
+```
+--install-extension mtxr.sqltools`
+--install-extension mtxr.sqltools-driver-mysql`
+--install-extension humao.rest-client`
+--install-extension ms-azuretools.vscode-docker`
+```
+
 ## W3Schools Database in Docker
+
+### Overview
 
 Forked from https://github.com/AndrejPHP/w3schools-database for academic purposes.
 
@@ -12,7 +28,7 @@ This repository provides:
 
 ### Fork to your github account
 Go to github.com, create a new account or login.
-Fork my repo (https://github.com/yveseinfeldt/w3schools-database)
+Fork my repo (https://github.com/...)
 
 Now you have a repository w3schools-database in your github account.
 Clone that with
@@ -24,7 +40,7 @@ code .
 
 Run the database and rest-api
 ```
-sudo docker-compose up
+docker-compose up
 ```
 
 Start the react app like this
@@ -65,7 +81,15 @@ and inserts the respective data.
 4. Delete a category
 5. Give an error message to the user when trying to delete a category that can't be deleted
 
+## React
+
+### Installation
+- Change to Root-Folder
+- Install with `npx create-react-app my-app`
+- After the install to run the app with `npm run`
+
 ### Journal
+
 #### 14.09.2024
 - Klärung div. Fragen u.a. zu "React", Docker und GitHub
 - Erläuterung Projektarbeit inkl. Beispiele
