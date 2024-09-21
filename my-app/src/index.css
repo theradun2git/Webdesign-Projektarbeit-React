@@ -2,12 +2,8 @@
 .product-container {
     display: flex;
     gap: 32px;
-    padding-left: 32px;
+    padding-left: 24px;
     padding-right: 32px;
-}
-
-.shopping-cart {
-    width: 25vw;
 }
 
 .main-container{

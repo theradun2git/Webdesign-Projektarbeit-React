@@ -64,13 +64,13 @@ function ProductCatalog() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Categories</h1>
+      <h1 className="text-2xl font-bold mb-4">Kategorien</h1>
       
       <button 
         className="btn btn-primary px-4 py-2 mb-4"
         onClick={() => setEditableCategoryId('new')}
       >
-        Add New Category
+        Neue Kategorie hinzufügen
       </button>
       {editableCategoryId === 'new' && (
         <div className="mb-4 p-4 border rounded">
@@ -127,9 +127,9 @@ function ProductCatalog() {
       <table className="min-w-full bg-white border">
         <thead>
           <tr>
-            <th className="py-2 px-4 border-b">Category Name</th>
-            <th className="py-2 px-4 border-b">Description</th>
-            <th className="py-2 px-4 border-b">Actions</th>
+            <th className="py-2 px-4 border-b">Name der Kategorie</th>
+            <th className="py-2 px-4 border-b">Beschreibung</th>
+            <th className="py-2 px-4 border-b">Aktionen</th>
           </tr>
         </thead>
         <tbody>

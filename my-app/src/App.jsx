@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from "./components/navbar";
-import ProductCatalog from './components/productcatalog';
+import ProductCatalog from './components/categories';
+import CostumerCatalog from './components/customers';
+import Productlist from './components/products';
 
 class App extends Component {
-    state = { 
-        items: []
-    };
+    state = {  };
 
     render() {
         const { items } = this.state;
@@ -13,8 +13,10 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Navbar />
-                <div>
+                <div className="product-container">
                     <ProductCatalog items={items} />
+                    <CostumerCatalog items={items} />
+                    <Productlist items={items} />
                 </div>
             </React.Fragment>
         );
