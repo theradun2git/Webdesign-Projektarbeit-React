@@ -67,7 +67,7 @@ function ProductCatalog() {
       <h1 className="text-2xl font-bold mb-4">Categories</h1>
       
       <button 
-        className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
+        className="btn btn-primary px-4 py-2 mb-4"
         onClick={() => setEditableCategoryId('new')}
       >
         Add New Category
@@ -90,7 +90,7 @@ function ProductCatalog() {
           />
           <div className="flex space-x-2">
             <button
-              className="bg-green-500 text-white px-4 py-2 rounded"
+              className="btn btn-secondary px-4 py-2 mb-4"
               onClick={() => {
                 const newCategory = editedCategory['new'];
                 fetch(`${api}/categories`, {
@@ -115,7 +115,7 @@ function ProductCatalog() {
               Save
             </button>
             <button 
-              className="bg-red-500 text-white px-4 py-2 rounded"
+              className="btn btn-secondary px-4 py-2 mb-4 mx-1"
               onClick={() => setEditableCategoryId(null)}
             >
               Cancel
@@ -167,13 +167,13 @@ function ProductCatalog() {
                 {editableCategoryId === category.CategoryID ? (
                   <div className="flex space-x-2">
                     <button 
-                      className="bg-green-500 text-white px-4 py-2 rounded"
+                      className="btn btn-secondary px-4 py-2 mb-4 mx-1"
                       onClick={() => handleSave(category.CategoryID)}
                     >
                       Save
                     </button>
                     <button 
-                      className="bg-red-500 text-white px-4 py-2 rounded"
+                      className="btn btn-secondary px-4 py-2 mb-4 mx-1"
                       onClick={() => setEditableCategoryId(null)}
                     >
                       Cancel
@@ -182,13 +182,13 @@ function ProductCatalog() {
                 ) : (
                   <div className="flex space-x-2">
                     <button 
-                      className="bg-yellow-500 text-white px-4 py-2 rounded"
+                      className="btn btn-success px-4 py-2 mb-4 mx-1"
                       onClick={() => setEditableCategoryId(category.CategoryID)}
                     >
                       Edit
                     </button>
                     <button 
-                      className="bg-red-500 text-white px-4 py-2 rounded"
+                      className="btn btn-danger px-4 py-2 mb-4 mx-1"
                       onClick={() => handleDelete(category.CategoryID)}
                     >
                       Delete
