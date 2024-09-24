@@ -1,4 +1,9 @@
 
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .product-container {
     display: flex;
     gap: 32px;

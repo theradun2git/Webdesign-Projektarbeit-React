@@ -1,0 +1,46 @@
+/* contact.css */
+
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .address-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .address-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .address-container p {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  .map-container {
+    text-align: center;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }

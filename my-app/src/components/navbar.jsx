@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     state = {};
@@ -9,31 +10,30 @@ class Navbar extends Component {
 
     render() { 
         return (
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-lg bg-light p-2">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/" >
-                        <img src="/assets/img/bag.jpg" alt="Bootstrap" width="30" height="24"></img>
-                    </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                            <div class="d-grid gap-2 d-md-block">
-                                <button type="button" className="btn btn-outline-success mx-1"><a className="navbar-brand" href="/" onClick={() => this.handleButtonClick('Produktkatalog')} > Produktkatalog </a></button>
-                                <button type="button" className="btn btn-outline-success mx-1"><a className="navbar-brand" href="/" onClick={() => this.handleButtonClick('Kontakt')} > Kontakt </a></button>
-                            </div>
-                            <form className="d-flex" role="search">
-                                <input 
-                                className="form-control me-2 mx-1" 
-                                type="search" 
-                                placeholder="Search" 
-                                aria-label="Search" 
-                                />
-                                <button className="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
+                    <Link className="navbar-brand" to="/" ><img src="/assets/img/bag.png" alt="Bootstrap" width="30" height="24"></img></Link>
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/Kundenliste" onClick={() => this.handleButtonClick('Kundenliste')} > Kundenliste </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/kategorien" onClick={() => this.handleButtonClick('Kategorien')} > Kategorien </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/produktliste" onClick={() => this.handleButtonClick('Produktliste')} > Produktliste </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/kontakt" onClick={() => this.handleButtonClick('Kontakt')} > Kontakt </Link>
+                            </li>
+                        </ul>
+                        <form className="d-flex" role="search">
+                            <input className="form-control me-2 mx-1"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"></input>
+                            <button className="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                 </div>
             </nav>
         );
