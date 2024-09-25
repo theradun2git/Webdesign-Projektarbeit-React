@@ -8,6 +8,7 @@ import Banner from './components/banner';
 import Greeting from './components/greetings';
 import Contactform from './components/contact';
 import SiteMap from './components/sitemap';
+import KonamiCode from './components/konamicode ';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         return (
             <Router>
                 <Navbar />
+                <KonamiCode />
                 <Routes>
                     <Route path="/" element={
                         <React.Fragment>
