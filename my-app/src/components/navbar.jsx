@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
-    state = {};
+    state = {
+        
+    };
 
     handleButtonClick = (buttonName) => {
         console.log(`${buttonName} Button clicked`);
@@ -26,14 +28,10 @@ class Navbar extends Component {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/kontakt" onClick={() => this.handleButtonClick('Kontakt')} > Kontakt </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/sitemap" onClick={() => this.handleButtonClick('sitemap')} > Sitemap </Link>
+                            </li>
                         </ul>
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2 mx-1"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"></input>
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                 </div>
             </nav>
         );

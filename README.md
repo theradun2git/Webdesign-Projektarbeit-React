@@ -1,6 +1,8 @@
 # Webdesign-Projektarbeit-React
 
-## Requirements (with Windows OS)
+## Requirements
+
+### Tested with Windows 11
 - Visual Studio Code (https://code.visualstudio.com/Download)
 - Docker (https://docs.docker.com/desktop/install/windows-install/)
 - Node.js (https://nodejs.org/en/download/package-manager | LTS version is preferred)
@@ -81,27 +83,52 @@ and inserts the respective data.
 4. Delete a category
 5. Give an error message to the user when trying to delete a category that can't be deleted
 
-## React
+## Website with "React"
 
-### Installation
+### Installation with Visual Studio Code
+- Open an inline Terminal
 - Change to Root-Folder
 - Install with `npx create-react-app my-app`
-- After the install to run the app with `npm start`
-- Important: Wechsel von Port 3000 auf 3001 => mit "Y" bestätigen
+- After the install --> change to "my-app" - Folder
+- Run the app with `npm start`
+- Important: Change from port 3000 to 3001 => confirm with "Y"
 
 ### Problems with CORS
 - Install CORS in the "rest-api" - Folder with `npm install cors`
 - Rebuild Docker Container with `docker build && docker compose up`
 - add this text to .\rest-api\app.js: `app.use(cors({ origin: 'http://localhost:3001' })); // Allow requests from your React app` (before const relations ...)
 
-### Journal
+### Package required for navigation bar
+- Installation via command line in "My App" `npm install react-router-dom`
+
+### Package required for design
+- Installation via command line in "My App" `npm install react-bootstrap bootstrap`
+
+### Features
+- Display 3 different entities with `GET`
+- 2 different entities with `POST`, `PATCH`, `DELETE`
+- 3 further features are available and work
+  > Welcome page with banner that changes the images 
+  > Kontakt
+  > Sitemap
+  > Responsive Design
+
+## Journal
 
 #### 14.09.2024
-- Klärung div. Fragen u.a. zu "React", Docker und GitHub
-- Erläuterung Projektarbeit inkl. Beispiele
+- Clarification of various questions about “React”, Docker and GitHub, among others
+- Explanation of project work incl. examples
 
 #### 21.09.2024
 - First steps with a tutorial
 - Inserting the table “Categories”
 - Problem solved with CORS
 
+### 24.09.2024
+- Further tables (Customers, Products) integrated with "GET, POST, DELETE" - commands
+- Add Contact, Welcome Site 
+- Add Menu navigation with "react-router-dom"
+
+### 25.09.2024
+- Add Sitemap
+- Designupdate

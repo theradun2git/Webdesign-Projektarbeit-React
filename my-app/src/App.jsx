@@ -7,6 +7,7 @@ import Productlist from './components/products';
 import Banner from './components/banner';
 import Greeting from './components/greetings';
 import Contactform from './components/contact';
+import SiteMap from './components/sitemap';
 
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
                     <Route path="/Kundenliste" element={<CustomerCatalog items={items} />} />
                     <Route path="/produktliste" element={<Productlist items={items} />} />
                     <Route path="/kontakt" element={<Contactform />} />
+                    <Route path="/sitemap" element={<SiteMap />} />
                 </Routes>
             </Router>
         );

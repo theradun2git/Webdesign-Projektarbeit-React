@@ -10,8 +10,17 @@ function ProductCatalog() {
   useEffect(() => {
     fetch(`${api}/categories`)
       .then(response => response.json())
-      .then(data => setCategories(data));
+      .then(data => {
+        const sortedData = sortCategories(data);
+        setCategories(sortedData);
+      })
+      .catch(error => console.error('Error fetching customers:', error));
   }, []);
+
+  // Function to sort categories by CategoryName
+  const sortCategories = (categories) => {
+    return categories.sort((a, b) => a.CategoryName.localeCompare(b.CategoryName));
+  };
 
   // Handle input change for editing category
   const handleInputChange = (categoryId, field, value) => {
@@ -77,14 +86,14 @@ function ProductCatalog() {
           <input
             className="border p-2 mb-2 w-full"
             type="text"
-            placeholder="Category Name"
+            placeholder="Name der Kategorie"
             value={editedCategory['new']?.CategoryName || ''}
             onChange={(e) => handleInputChange('new', 'CategoryName', e.target.value)}
           />
           <input
             className="border p-2 mb-2 w-full"
             type="text"
-            placeholder="Description"
+            placeholder="Beschreibung"
             value={editedCategory['new']?.Description || ''}
             onChange={(e) => handleInputChange('new', 'Description', e.target.value)}
           />
