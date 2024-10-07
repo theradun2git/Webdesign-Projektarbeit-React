@@ -105,21 +105,23 @@ and inserts the respective data.
 - Installation via command line in "My App" `npm install react-bootstrap bootstrap`
 
 ### Features
-- Display 3 different entities with `GET`
-- 2 different entities with `POST`, `PATCH`, `DELETE`
-- 3 further features are available and work
-  > Welcome page with banner that changes the images 
-  > Kontakt
-  > Sitemap
-  > Responsive Design
+- Display 3 different entities with `GET` (Customer list, categories, product list)
+- 2 different entities with `POST`, `PATCH`, `DELETE` (Buttons with New, Edit or Delete)
+- Three or more additional features are available and functional:
+  - Navigation bar
+  - Welcome page with banner that changes the images
+  - Lists sorted from A to Z by default
+  - Pages with contact & sitemap
+  - Easter Egg
+    - "Press arrow up, arrow up, arrow down, arrow down, and guess a number between 1 and 100. Good luck!
 
 ## Journal
 
-#### 14.09.2024
+### 14.09.2024
 - Clarification of various questions about “React”, Docker and GitHub, among others
 - Explanation of project work incl. examples
 
-#### 21.09.2024
+### 21.09.2024
 - First steps with a tutorial
 - Inserting the table “Categories”
 - Problem solved with CORS
@@ -132,3 +134,6 @@ and inserts the respective data.
 ### 25.09.2024
 - Add Sitemap
 - Designupdate
+
+### 07.10.2024
+- Update "README.md"
