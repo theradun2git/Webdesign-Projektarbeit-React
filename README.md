@@ -8,13 +8,11 @@
 - Node.js (https://nodejs.org/en/download/package-manager | LTS version is preferred)
 - Git (https://git-scm.com/downloads)
 
-### Extensions in Visual Studio Code
-```
---install-extension mtxr.sqltools
---install-extension mtxr.sqltools-driver-mysql
---install-extension humao.rest-client
---install-extension ms-azuretools.vscode-docker
-```
+### Recommended extensions in Visual Studio Code
+- mtxr.sqltools
+- mtxr.sqltools-driver-mysql
+- humao.rest-client
+- ms-azuretools.vscode-docker
 
 ## W3Schools Database in Docker
 
@@ -83,7 +81,7 @@ and inserts the respective data.
 4. Delete a category
 5. Give an error message to the user when trying to delete a category that can't be deleted
 
-## Website with "React"
+## Configuration "React"- APP
 
 ### Installation with Visual Studio Code
 - Open an inline Terminal
@@ -93,10 +91,10 @@ and inserts the respective data.
 - Run the app with `npm start`
 - Important: Change from port 3000 to 3001 => confirm with "Y"
 
-### Problems with CORS
+### Configuration "CORS"
 - Install CORS in the "rest-api" - Folder with `npm install cors`
-- Rebuild Docker Container with `docker build && docker compose up`
 - add this text to .\rest-api\app.js: `app.use(cors({ origin: 'http://localhost:3001' })); // Allow requests from your React app` (before const relations ...)
+- Rebuild Docker Container with `docker build && docker compose up` or manually delete the containers and images in Docker. Then run `Docker Compose up`
 
 ### Package required for navigation bar
 - Installation via command line in "My App" `npm install react-router-dom`
