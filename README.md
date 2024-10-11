@@ -102,6 +102,10 @@ and inserts the respective data.
 ### Package required for design
 - Installation via command line in "My App" `npm install react-bootstrap bootstrap`
 
+### Problems with "npm-start"
+- Check Node.js with `node -v` and npm `npm -v`
+- Reinstallation npm via command line in "My App" `npm install`
+
 ### Features
 - Display 3 different entities with `GET` (Customer list, categories, product list)
 - 2 different entities with `POST`, `PATCH`, `DELETE` (Buttons with New, Edit or Delete)
