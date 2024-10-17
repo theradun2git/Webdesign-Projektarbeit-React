@@ -106,6 +106,9 @@ and inserts the respective data.
 - Check Node.js with `node -v` and npm `npm -v`
 - Reinstallation npm via command line in "My App" `npm install`
 
+### Easter Egg
+- "Press arrow up, arrow up, arrow down, arrow down, and guess a number between 1 and 100. Good luck!
+
 ### Features
 - Display 3 different entities with `GET` (Customer list, categories, product list)
 - 2 different entities with `POST`, `PATCH`, `DELETE` (Buttons with New, Edit or Delete)
@@ -115,7 +118,6 @@ and inserts the respective data.
   - Lists sorted from A to Z by default
   - Pages with contact & sitemap
   - Easter Egg
-    - "Press arrow up, arrow up, arrow down, arrow down, and guess a number between 1 and 100. Good luck!
 
 ## Journal
 
